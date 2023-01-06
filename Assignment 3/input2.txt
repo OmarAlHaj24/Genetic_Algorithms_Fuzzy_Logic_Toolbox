@@ -1,0 +1,41 @@
+System
+Description
+1
+Op IN [0, 100]
+Pdp IN [0, 100]
+Pydp IN [0, 100]
+D OUT [0, 100]
+x
+2
+Op
+L TRI 0 0 50
+M TRI 0 50 100
+H TRI 50 100 100
+x
+2
+Pdp
+L TRI 0 0 50
+M TRI 0 50 100
+H TRI 50 100 100
+x
+2
+Pydp
+L TRI 0 0 50
+M TRI 0 50 100
+H TRI 50 100 100
+x
+2
+D
+B TRI 0 0 50
+H TRI 0 50 100
+S TRI 50 100 100
+x
+3
+Pdp L and Pydp M => Y L
+Pdp M and Pydp L => Y M
+Pdp H and Pydp H => Y H
+Op L and Y L => D B
+Op M and Y M => D H
+Op H and Y H => D S
+x
+Close
